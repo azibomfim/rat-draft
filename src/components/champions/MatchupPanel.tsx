@@ -120,7 +120,7 @@ function Fact({ label, value }: { label: string; value: string }) {
   );
 }
 
-function WinRateBar({ a, b, winRateA }: { a: string; b: string; winRateA: number }) {
+export function WinRateBar({ a, b, winRateA }: { a: string; b: string; winRateA: number }) {
   const pct = usePercent();
   const width = Math.min(100, Math.max(0, winRateA * 100));
   return (

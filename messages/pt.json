@@ -77,7 +77,88 @@
     "title": "Simulador de draft"
   },
   "Analyze": {
-    "title": "Analisar draft"
+    "title": "Analisar draft",
+    "intro": "Monte os bans e picks de uma partida no tabuleiro (em qualquer ordem) ou cole o draft em texto, e receba uma análise completa.",
+    "pasteTitle": "Colar draft em texto",
+    "pasteHelp": "Uma linha por time, picks na ordem Top, Jungle, Mid, ADC, Suporte. Ex.: Azul: Aatrox, Lee Sin, Ahri, Jinx, Thresh. Bans: \"Bans azul: ...\". Nomes em PT ou EN.",
+    "pastePlaceholder": "Azul: Aatrox, Lee Sin, Ahri, Jinx, Thresh\nVermelho: Ornn, Vi, Orianna, Kai'Sa, Nautilus\nBans azul: Yone, Rell, Ziggs\nBans vermelho: Skarner, Ashe, Hwei",
+    "applyPaste": "Aplicar texto",
+    "pasteUnknown": "Não reconhecido: {names}",
+    "pasteIgnored": "Linhas ignoradas: {lines}",
+    "pasteNothing": "Nenhum time encontrado. Comece a linha com \"Azul:\" ou \"Vermelho:\".",
+    "playersToggle": "Informar os jogadores (para considerar o conforto)",
+    "playerPlaceholder": "Nome#TAG",
+    "useSavedTeam": "Preencher {side} com o time salvo",
+    "noSavedTeam": "Nenhum time salvo. Carregue um na página Time.",
+    "resultLabel": "Resultado (opcional)",
+    "resultNone": "Não informar",
+    "resultWin": "Vitória do {side}",
+    "reset": "Limpar tabuleiro",
+    "analyze": "Analisar draft",
+    "analyzing": "Analisando…",
+    "cancel": "Cancelar",
+    "missingPicks": "Faltam picks: complete os 5 de cada lado.",
+    "duplicateRoles": "Cada lado precisa de uma rota diferente para cada pick.",
+    "requestFailed": "Não foi possível analisar agora. Tente de novo.",
+    "overviewTitle": "Visão geral",
+    "score": "Nota do draft",
+    "favored": "{side} saiu na frente no draft",
+    "even": "Draft equilibrado",
+    "reasons": "Principais motivos",
+    "phasesTitle": "Quem é mais forte em cada fase",
+    "phaseEven": "Equilibrado",
+    "archetypeMatchup": "Confronto de estilos: {a} × {b}",
+    "archetypeWinner": "vantagem {side}",
+    "archetypeEven": "sem vantagem clara",
+    "compsTitle": "Composições",
+    "lanesTitle": "Matchups de rota",
+    "laneNoData": "Sem dados para este confronto.",
+    "laneDetails": "Detalhes",
+    "comfortTitle": "Conforto dos jogadores",
+    "comfortValue": "conforto {comfort} · {games, plural, one {# jogo} other {# jogos}}",
+    "comfortNone": "sem partidas registradas com o campeão",
+    "comfortError": "não foi possível buscar",
+    "aiTitle": "Análise do coach (IA)",
+    "aiLoading": "A IA está escrevendo…",
+    "aiUnavailable": "Análise por IA indisponível. A análise por regras acima continua valendo.",
+    "aiError": "A análise por IA falhou. A análise por regras acima continua valendo.",
+    "copy": "Copiar análise",
+    "copied": "Copiado!",
+    "copyFailed": "Não foi possível copiar.",
+    "factors": {
+      "archetype_identity": "Estilo bem definido ({detail})",
+      "archetype_matchup": "Vence o confronto de estilos ({detail})",
+      "weakness": "Fraqueza: {detail}",
+      "strength": "Força: {detail}",
+      "damage_balance": "Dano de um tipo só",
+      "phase": "Mais forte no {detail}"
+    },
+    "phaseNames": {
+      "early": "início",
+      "mid": "meio",
+      "late": "fim de jogo"
+    },
+    "weaknessShort": {
+      "no_frontline": "sem linha de frente",
+      "no_engage": "pouco engage",
+      "low_waveclear": "pouca limpeza de wave",
+      "single_damage_type": "dano de um tipo só",
+      "no_peel_for_carry": "carry sem proteção",
+      "vulnerable_to_poke": "vulnerável a poke"
+    },
+    "markdown": {
+      "title": "Análise de draft",
+      "result": "Resultado: vitória do {side}",
+      "scores": "Nota do draft: {blue} {blueScore} × {redScore} {red}",
+      "picks": "Picks",
+      "bans": "Bans",
+      "weaknesses": "Fraquezas",
+      "strengths": "Forças",
+      "archetype": "Estilo",
+      "curve": "Curva (início/meio/fim)",
+      "damage": "Dano",
+      "footer": "Gerado pelo Analista de Draft"
+    }
   },
   "Roles": {
     "top": "Top",
@@ -232,5 +313,29 @@
     },
     "unknown": "Sem atributos para: {names} (ignorados na análise).",
     "empty": "Escolha campeões para ver a análise."
+  },
+  "Draft": {
+    "sides": {
+      "blue": "Lado azul",
+      "red": "Lado vermelho"
+    },
+    "sideShort": {
+      "blue": "Azul",
+      "red": "Vermelho"
+    },
+    "bans": "Bans",
+    "picks": "Picks",
+    "role": "Rota",
+    "banSlot": "Ban {n} vazio",
+    "banSlotFilled": "Ban {n}: {champion}",
+    "emptyPick": "Escolher campeão",
+    "clearSlot": "Limpar",
+    "search": "Buscar campeão",
+    "roleFilter": "Filtrar por rota",
+    "allRoles": "Todas",
+    "noResults": "Nenhum campeão encontrado.",
+    "filling": "Escolhendo: {slot}",
+    "slotBan": "{side} · ban {n}",
+    "slotPick": "{side} · pick {n}"
   }
 }

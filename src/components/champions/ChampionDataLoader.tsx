@@ -7,10 +7,20 @@ import { ChampionDataProvider, type ChampionDataValue } from "./ChampionData";
 export async function ChampionDataLoader({ locale, children }: { locale: string; children: ReactNode }) {
   // Request-time data (in-memory TTL cache uses the clock); render inside <Suspense>.
   await connection();
-  let value: ChampionDataValue = { version: null, names: {} };
+  let value: ChampionDataValue = { version: null, names: {}, searchNames: {} };
   try {
-    const [version, champions] = await Promise.all([getLatestVersion(), getChampions(locale)]);
-    value = { version, names: Object.fromEntries(champions.map((c) => [c.id, c.name])) };
+    const [version, champions, pt, en] = await Promise.all([
+      getLatestVersion(),
+      getChampions(locale),
+      getChampions("pt"),
+      getChampions("en"),
+    ]);
+    const searchNames: Record<string, string[]> = {};
+    for (const c of [...pt, ...en]) {
+      const list = (searchNames[c.id] ??= []);
+      if (!list.includes(c.name)) list.push(c.name);
+    }
+    value = { version, names: Object.fromEntries(champions.map((c) => [c.id, c.name])), searchNames };
   } catch {
     // Data Dragon unavailable: components fall back to ids and placeholders.
   }

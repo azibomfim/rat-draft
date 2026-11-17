@@ -1,0 +1,107 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`buildAnalystPrompt > matches the snapshot (en, no result) 1`] = `
+{
+  "prompt": "Analyze this tournament draft. The rule-based overview, composition breakdown and lane matchups are already shown to the user; do NOT repeat them.
+Write ONLY these Markdown sections, with exactly these headings and in this order:
+## Win conditions
+  For each team (Blue and Red): 2-3 bullets on how it must play to win (timings, objectives, fight style).
+## How to play against
+  For each team: 2-3 bullets on what it must avoid against the other comp.
+## Draft turning points
+  3-4 bullets: the picks or bans that most shifted the balance and, for each, a better alternative and why (qualitative if not backed by the data).
+
+DATA:
+Blue (blue):
+  bans: Yone, Rell
+  picks: Top Malphite, Jungle Sejuani, Mid Orianna, ADC Miss Fortune, Support Leona
+  archetypes (0-10): engage 9.4, pick 4.3, dive 4.2
+  damage: AD 20%, AP 80%
+  power curve (0-10): early 7.3, mid 9.3, late 6
+  profile (0-10): engage 8, disengage 2.7, peel 5.3, cc 8.7, frontline 6, poke 3.3, waveclear 6.7, splitpush 0, mobility 2.7, objectiveControl 5.3
+  weaknesses: vulnerable_to_poke
+  strengths: strong_frontline, strong_engage, strong_peel, strong_cc
+  draft score (0-100): 79; factors: archetype_identity:engage +8.8, archetype_matchup:engage +8, weakness:vulnerable_to_poke -6, strength:strong_frontline +3, strength:strong_engage +3, strength:strong_peel +3, strength:strong_cc +3, phase:mid +3, phase:late +3
+Red (red):
+  bans: Ahri
+  picks: Top Jayce, Jungle Nidalee, Mid Xerath, ADC Ezreal, Support Karma
+  archetypes (0-10): poke 10, dive 4, skirmish 3.9
+  damage: AD 40%, AP 60%
+  power curve (0-10): early 8.7, mid 8, late 4.7
+  profile (0-10): engage 0.7, disengage 3.3, peel 2, cc 2.7, frontline 0, poke 10, waveclear 7.3, splitpush 2.7, mobility 6, objectiveControl 5.3
+  weaknesses: no_frontline, no_engage
+  strengths: balanced_damage, strong_early
+  draft score (0-100): 49; factors: archetype_identity:poke +10, archetype_matchup:poke -8, weakness:no_frontline -6, weakness:no_engage -6, strength:balanced_damage +3, strength:strong_early +3, phase:early +3
+Comparison:
+  favored: Blue
+  archetype matchup: engage (blue) vs poke (red) → Blue
+  stronger by phase: early Red, mid Blue, late Blue
+Lane matchups (current patch, all ranks):
+  Top: Malphite (Blue) vs Jayce (Red): Malphite wins 53.2% of 2100 games; early lane advantage: Jayce
+  Jungle: Sejuani (Blue) vs Nidalee (Red): no data
+Player comfort on the picked champion (0-100):
+  Blue Mid Orianna (Robo#ROBS): comfort 81, 40 games, win rate 60%
+  Blue Top Malphite (Robo#ROBS): no recorded games on this champion",
+  "system": "You are a professional League of Legends analyst and coach: objective and direct.
+Base every statement on the DATA block you receive (composition analysis, meta, matchups, comfort).
+Never invent statistics, win rates or numbers that are not in the data. When something is not in the data, say it is a qualitative assessment.
+Only quote a number together with the exact item it belongs to in the data (same lane, same champion). Do not quote internal score points or factor values; describe them in words.
+Never write internal codes from the data (like no_frontline, vulnerable_to_poke, archetype_identity); say what they mean in plain words.
+Always answer in English.
+Keep answers short and scannable: bullet points, no filler, no introduction or conclusion paragraphs.",
+}
+`;
+
+exports[`buildAnalystPrompt > matches the snapshot (pt, with result) 1`] = `
+{
+  "prompt": "Analyze this tournament draft. The rule-based overview, composition breakdown and lane matchups are already shown to the user; do NOT repeat them.
+Write ONLY these Markdown sections, with exactly these headings and in this order:
+## Condições de vitória
+  For each team (Azul and Vermelho): 2-3 bullets on how it must play to win (timings, objectives, fight style).
+## Como jogar contra
+  For each team: 2-3 bullets on what it must avoid against the other comp.
+## Pontos de virada do draft
+  3-4 bullets: the picks or bans that most shifted the balance and, for each, a better alternative and why (qualitative if not backed by the data).
+## O draft explica o resultado?
+  The match was won by Vermelho. 2-3 bullets on whether the draft helps explain it. Do not claim causality: drafts give an edge, the game is decided by play.
+
+DATA:
+Azul (blue):
+  bans: Yone, Rell
+  picks: Top Malphite, Jungle Sejuani, Mid Orianna, ADC Miss Fortune, Suporte Leona
+  archetypes (0-10): engage 9.4, pick 4.3, dive 4.2
+  damage: AD 20%, AP 80%
+  power curve (0-10): early 7.3, mid 9.3, late 6
+  profile (0-10): engage 8, disengage 2.7, peel 5.3, cc 8.7, frontline 6, poke 3.3, waveclear 6.7, splitpush 0, mobility 2.7, objectiveControl 5.3
+  weaknesses: vulnerable_to_poke
+  strengths: strong_frontline, strong_engage, strong_peel, strong_cc
+  draft score (0-100): 79; factors: archetype_identity:engage +8.8, archetype_matchup:engage +8, weakness:vulnerable_to_poke -6, strength:strong_frontline +3, strength:strong_engage +3, strength:strong_peel +3, strength:strong_cc +3, phase:mid +3, phase:late +3
+Vermelho (red):
+  bans: Ahri
+  picks: Top Jayce, Jungle Nidalee, Mid Xerath, ADC Ezreal, Suporte Karma
+  archetypes (0-10): poke 10, dive 4, skirmish 3.9
+  damage: AD 40%, AP 60%
+  power curve (0-10): early 8.7, mid 8, late 4.7
+  profile (0-10): engage 0.7, disengage 3.3, peel 2, cc 2.7, frontline 0, poke 10, waveclear 7.3, splitpush 2.7, mobility 6, objectiveControl 5.3
+  weaknesses: no_frontline, no_engage
+  strengths: balanced_damage, strong_early
+  draft score (0-100): 49; factors: archetype_identity:poke +10, archetype_matchup:poke -8, weakness:no_frontline -6, weakness:no_engage -6, strength:balanced_damage +3, strength:strong_early +3, phase:early +3
+Comparison:
+  favored: Azul
+  archetype matchup: engage (blue) vs poke (red) → Azul
+  stronger by phase: early Vermelho, mid Azul, late Azul
+Lane matchups (current patch, all ranks):
+  Top: Malphite (Azul) vs Jayce (Vermelho): Malphite wins 53.2% of 2100 games; early lane advantage: Jayce
+  Jungle: Sejuani (Azul) vs Nidalee (Vermelho): no data
+Player comfort on the picked champion (0-100):
+  Azul Mid Orianna (Robo#ROBS): comfort 81, 40 games, win rate 60%
+  Azul Top Malphite (Robo#ROBS): no recorded games on this champion",
+  "system": "You are a professional League of Legends analyst and coach: objective and direct.
+Base every statement on the DATA block you receive (composition analysis, meta, matchups, comfort).
+Never invent statistics, win rates or numbers that are not in the data. When something is not in the data, say it is a qualitative assessment.
+Only quote a number together with the exact item it belongs to in the data (same lane, same champion). Do not quote internal score points or factor values; describe them in words.
+Never write internal codes from the data (like no_frontline, vulnerable_to_poke, archetype_identity); say what they mean in plain words.
+Always answer in português do Brasil.
+Keep answers short and scannable: bullet points, no filler, no introduction or conclusion paragraphs.",
+}
+`;

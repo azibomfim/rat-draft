@@ -8,7 +8,7 @@ export type AIProviderName = (typeof AI_PROVIDERS)[number];
 
 /** Default model per provider, used when AI_MODEL is empty. */
 const DEFAULT_MODELS: Record<AIProviderName, string> = {
-  groq: "llama-3.3-70b-versatile",
+  groq: "openai/gpt-oss-120b",
   google: "gemini-2.5-flash",
   anthropic: "claude-sonnet-5-5",
 };

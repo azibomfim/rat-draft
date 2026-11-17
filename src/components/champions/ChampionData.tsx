@@ -1,16 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { createContext, useContext, type ReactNode } from "react";
+import { createContext, useContext, useMemo, type ReactNode } from "react";
+import { ChampionIndex } from "@/lib/data/champion-id";
 
 export interface ChampionDataValue {
   /** Data Dragon patch version; null if Data Dragon was unreachable. */
   version: string | null;
   /** Data Dragon id → localized name. */
   names: Record<string, string>;
+  /** Data Dragon id → names in every supported language (search and pasted text). */
+  searchNames: Record<string, string[]>;
 }
 
-const ChampionDataContext = createContext<ChampionDataValue>({ version: null, names: {} });
+const ChampionDataContext = createContext<ChampionDataValue>({ version: null, names: {}, searchNames: {} });
 
 export function ChampionDataProvider({ value, children }: { value: ChampionDataValue; children: ReactNode }) {
   return <ChampionDataContext.Provider value={value}>{children}</ChampionDataContext.Provider>;
@@ -49,5 +52,17 @@ export function ChampionIcon({ id, size = 32 }: { id: string; size?: number }) {
       unoptimized
       className="shrink-0 rounded"
     />
+  );
+}
+
+/** Lookup by id, key or any localized name (PT and EN), built once per data set. */
+export function useChampionIndex(): ChampionIndex {
+  const { searchNames } = useChampionData();
+  return useMemo(
+    () =>
+      new ChampionIndex(
+        Object.entries(searchNames).flatMap(([id, names]) => [{ id }, ...names.map((name) => ({ id, name }))]),
+      ),
+    [searchNames],
   );
 }
