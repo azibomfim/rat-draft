@@ -7,6 +7,9 @@
   --series-a: #2a78d6;
   --series-b: #eb6834;
   --chart-grid: #e1e0d9;
+  /* damage types (aqua below 3:1 on white → always shown with text labels) */
+  --dmg-ad: #1baf7a;
+  --dmg-ap: #6250d6;
   --chart-axis: #c3c2b7;
   --chart-muted: #6b6a65;
 }
@@ -16,6 +19,8 @@
   --color-foreground: var(--foreground);
   --color-series-a: var(--series-a);
   --color-series-b: var(--series-b);
+  --color-dmg-ad: var(--dmg-ad);
+  --color-dmg-ap: var(--dmg-ap);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -28,6 +33,8 @@
     --series-a: #3987e5;
     --series-b: #d95926;
     --chart-grid: #2c2c2a;
+    --dmg-ad: #199e70;
+    --dmg-ap: #9085e9;
     --chart-axis: #383835;
     --chart-muted: #9a9890;
   }

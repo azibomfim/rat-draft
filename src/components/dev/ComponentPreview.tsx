@@ -6,6 +6,7 @@ import { useChampionData } from "@/components/champions/ChampionData";
 import { ChampionCard } from "@/components/champions/ChampionCard";
 import { MatchupPanel } from "@/components/champions/MatchupPanel";
 import { ROLES, type Role } from "@/lib/data/types";
+import { CompPreview } from "./CompPreview";
 
 export function ComponentPreview() {
   const t = useTranslations("Dev");
@@ -45,6 +46,7 @@ export function ComponentPreview() {
         <ChampionCard championId={a} role={role} />
         <MatchupPanel role={role} a={a} b={b} />
       </div>
+      <CompPreview />
     </div>
   );
 }

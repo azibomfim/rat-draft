@@ -161,6 +161,76 @@
     "note": "Página só de desenvolvimento para revisar os componentes da Fase 2.",
     "champion": "Campeão",
     "role": "Rota",
-    "opponent": "Adversário"
+    "opponent": "Adversário",
+    "compTitle": "Composições",
+    "teamA": "Time A",
+    "teamB": "Time B",
+    "teamHelp": "Um campeão por rota (Top, Jungle, Mid, ADC, Suporte), separados por vírgula."
+  },
+  "Comp": {
+    "radarTitle": "Perfil da composição",
+    "radarHelp": "Soma dos atributos de draft do time, de 0 a 10 (10 = cinco campeões excelentes no atributo).",
+    "showTable": "Ver como tabela",
+    "attribute": "Atributo",
+    "attributes": {
+      "engage": "Engage",
+      "disengage": "Disengage",
+      "peel": "Peel",
+      "cc": "Controle (CC)",
+      "frontline": "Linha de frente",
+      "poke": "Poke",
+      "waveclear": "Limpeza de wave",
+      "splitpush": "Split push",
+      "mobility": "Mobilidade",
+      "objectiveControl": "Objetivos"
+    },
+    "archetypeTitle": "Estilo de jogo",
+    "archetypes": {
+      "engage": "Engage",
+      "poke": "Poke",
+      "pick": "Pick",
+      "protect": "Proteger o carry",
+      "splitpush": "Split push",
+      "dive": "Dive",
+      "skirmish": "Skirmish"
+    },
+    "damageTitle": "Perfil de dano",
+    "ad": "AD {pct}",
+    "ap": "AP {pct}",
+    "damageWarnings": {
+      "full_ad": "Quase todo o dano é físico: fácil de itemizar contra (armadura).",
+      "full_ap": "Quase todo o dano é mágico: fácil de itemizar contra (resistência mágica)."
+    },
+    "powerTitle": "Curva de força",
+    "phases": {
+      "early": "Início",
+      "mid": "Meio",
+      "late": "Fim"
+    },
+    "weaknessesTitle": "Fraquezas",
+    "strengthsTitle": "Forças",
+    "none": "Nenhuma",
+    "weaknesses": {
+      "no_frontline": "Sem linha de frente: ninguém para segurar dano nas lutas.",
+      "no_engage": "Pouco engage: difícil começar lutas.",
+      "low_waveclear": "Pouca limpeza de wave: sofre contra cerco e pressão de rotas.",
+      "single_damage_type": "Dano de um tipo só.",
+      "no_peel_for_carry": "Carry sem proteção: pouco peel para o hypercarry.",
+      "vulnerable_to_poke": "Vulnerável a poke: pouca mobilidade contra um time de poke."
+    },
+    "strengths": {
+      "strong_frontline": "Linha de frente sólida",
+      "strong_engage": "Engage forte",
+      "strong_peel": "Muito peel",
+      "strong_cc": "Muito controle (CC)",
+      "strong_waveclear": "Ótima limpeza de wave",
+      "high_mobility": "Alta mobilidade",
+      "objective_control": "Bom controle de objetivos",
+      "balanced_damage": "Dano misto equilibrado",
+      "strong_early": "Forte no início",
+      "strong_late": "Forte no fim de jogo"
+    },
+    "unknown": "Sem atributos para: {names} (ignorados na análise).",
+    "empty": "Escolha campeões para ver a análise."
   }
 }

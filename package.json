@@ -9,7 +9,9 @@
     "lint": "eslint",
     "test": "node scripts/vitest.mjs run",
     "test:watch": "node scripts/vitest.mjs",
-    "opgg:tools": "tsx --env-file-if-exists=.env.local scripts/list-opgg-tools.ts"
+    "opgg:tools": "tsx --env-file-if-exists=.env.local scripts/list-opgg-tools.ts",
+    "champions:sync": "tsx scripts/sync-champions.ts",
+    "prebuild": "tsx scripts/sync-champions.ts --strict"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^4.0.106",

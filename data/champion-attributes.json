@@ -1,0 +1,4151 @@
+{
+  "Aatrox": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "skirmish"
+    ]
+  },
+  "Ahri": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "burst",
+      "roam"
+    ]
+  },
+  "Akali": {
+    "roles": [
+      "mid",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "skirmish",
+      "roam"
+    ]
+  },
+  "Akshan": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "skirmish",
+      "roam"
+    ]
+  },
+  "Alistar": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 3,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "protect",
+      "tank"
+    ]
+  },
+  "Ambessa": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "dive",
+      "skirmish",
+      "splitpush"
+    ],
+    "review": true
+  },
+  "Amumu": {
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "teamfight",
+      "tank"
+    ]
+  },
+  "Anivia": {
+    "roles": [
+      "mid",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "teamfight"
+    ]
+  },
+  "Annie": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "engage",
+      "teamfight"
+    ]
+  },
+  "Aphelios": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "teamfight"
+    ]
+  },
+  "Ashe": {
+    "roles": [
+      "adc",
+      "support"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "engage",
+      "poke"
+    ]
+  },
+  "AurelionSol": {
+    "roles": [
+      "mid",
+      "adc"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Aurora": {
+    "roles": [
+      "mid",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "skirmish",
+      "pick"
+    ],
+    "review": true
+  },
+  "Azir": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 2,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "teamfight",
+      "poke"
+    ]
+  },
+  "Bard": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "roam",
+      "protect"
+    ]
+  },
+  "Belveth": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "skirmish",
+      "splitpush",
+      "hypercarry"
+    ]
+  },
+  "Blitzcrank": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "engage"
+    ]
+  },
+  "Brand": {
+    "roles": [
+      "support",
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Braum": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "tank"
+    ]
+  },
+  "Briar": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "skirmish"
+    ],
+    "review": true
+  },
+  "Caitlyn": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "zone"
+    ]
+  },
+  "Camille": {
+    "roles": [
+      "top",
+      "support"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 3,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "dive",
+      "splitpush",
+      "pick"
+    ]
+  },
+  "Cassiopeia": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Chogath": {
+    "roles": [
+      "jungle",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 3,
+    "tags": [
+      "tank",
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Corki": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "poke"
+    ]
+  },
+  "Darius": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "skirmish",
+      "teamfight"
+    ]
+  },
+  "Diana": {
+    "roles": [
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "dive",
+      "teamfight"
+    ]
+  },
+  "Draven": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "skirmish"
+    ]
+  },
+  "DrMundo": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 3,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "tank",
+      "splitpush"
+    ]
+  },
+  "Ekko": {
+    "roles": [
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Elise": {
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "dive"
+    ]
+  },
+  "Evelynn": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "burst"
+    ]
+  },
+  "Ezreal": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "poke"
+    ]
+  },
+  "Fiddlesticks": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "teamfight"
+    ]
+  },
+  "Fiora": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 3,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "splitpush",
+      "skirmish"
+    ]
+  },
+  "Fizz": {
+    "roles": [
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "pick",
+      "roam"
+    ]
+  },
+  "Galio": {
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "protect",
+      "teamfight",
+      "roam"
+    ]
+  },
+  "Gangplank": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 2,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "splitpush"
+    ]
+  },
+  "Garen": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "tank",
+      "splitpush"
+    ]
+  },
+  "Gnar": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "teamfight"
+    ]
+  },
+  "Gragas": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "pick",
+      "teamfight"
+    ]
+  },
+  "Graves": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "skirmish"
+    ]
+  },
+  "Gwen": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "splitpush",
+      "skirmish",
+      "antitank"
+    ]
+  },
+  "Hecarim": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "dive",
+      "teamfight"
+    ]
+  },
+  "Heimerdinger": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "poke"
+    ]
+  },
+  "Hwei": {
+    "roles": [
+      "mid",
+      "adc",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "zone",
+      "teamfight"
+    ],
+    "review": true
+  },
+  "Illaoi": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "splitpush",
+      "teamfight"
+    ]
+  },
+  "Irelia": {
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Ivern": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 3,
+    "tags": [
+      "protect",
+      "enchanter"
+    ]
+  },
+  "Janna": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "enchanter"
+    ]
+  },
+  "JarvanIV": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 3,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "dive",
+      "teamfight"
+    ]
+  },
+  "Jax": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "splitpush",
+      "skirmish"
+    ]
+  },
+  "Jayce": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "poke",
+      "splitpush"
+    ]
+  },
+  "Jhin": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "poke",
+      "teamfight"
+    ]
+  },
+  "Jinx": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "teamfight"
+    ]
+  },
+  "Kaisa": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Kalista": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "skirmish"
+    ]
+  },
+  "Karma": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "poke",
+      "protect",
+      "enchanter"
+    ]
+  },
+  "Karthus": {
+    "roles": [
+      "jungle",
+      "adc"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 3,
+    "tags": [
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Kassadin": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "pick"
+    ]
+  },
+  "Katarina": {
+    "roles": [
+      "mid",
+      "adc"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "teamfight",
+      "skirmish",
+      "roam"
+    ]
+  },
+  "Kayle": {
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "splitpush"
+    ]
+  },
+  "Kayn": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "pick",
+      "skirmish"
+    ]
+  },
+  "Kennen": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "teamfight"
+    ]
+  },
+  "Khazix": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "burst",
+      "skirmish"
+    ]
+  },
+  "Kindred": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "skirmish",
+      "hypercarry"
+    ]
+  },
+  "Kled": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "dive",
+      "skirmish"
+    ]
+  },
+  "KogMaw": {
+    "roles": [
+      "adc",
+      "mid"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "poke"
+    ]
+  },
+  "KSante": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 2,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "tank",
+      "engage",
+      "protect"
+    ],
+    "review": true
+  },
+  "Leblanc": {
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "burst",
+      "roam"
+    ]
+  },
+  "LeeSin": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 3,
+    "tags": [
+      "pick",
+      "skirmish",
+      "dive"
+    ]
+  },
+  "Leona": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "tank"
+    ]
+  },
+  "Lillia": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 3,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "teamfight",
+      "skirmish"
+    ]
+  },
+  "Lissandra": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "pick",
+      "teamfight"
+    ]
+  },
+  "Locke": {
+    "roles": [
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "pick"
+    ],
+    "review": true
+  },
+  "Lucian": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "skirmish"
+    ]
+  },
+  "Lulu": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "enchanter"
+    ]
+  },
+  "Lux": {
+    "roles": [
+      "support",
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "pick",
+      "burst"
+    ]
+  },
+  "Malphite": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "tank",
+      "teamfight"
+    ]
+  },
+  "Malzahar": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "zone"
+    ]
+  },
+  "Maokai": {
+    "roles": [
+      "support",
+      "jungle",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "tank",
+      "zone"
+    ]
+  },
+  "MasterYi": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "hypercarry",
+      "skirmish"
+    ]
+  },
+  "Mel": {
+    "roles": [
+      "mid",
+      "adc",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "poke",
+      "protect",
+      "burst"
+    ],
+    "review": true
+  },
+  "Milio": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "enchanter"
+    ],
+    "review": true
+  },
+  "MissFortune": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "zone"
+    ]
+  },
+  "MonkeyKing": {
+    "roles": [
+      "jungle",
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "teamfight"
+    ]
+  },
+  "Mordekaiser": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "skirmish",
+      "antitank",
+      "teamfight"
+    ]
+  },
+  "Morgana": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "protect"
+    ]
+  },
+  "Naafiri": {
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "pick",
+      "roam"
+    ],
+    "review": true
+  },
+  "Nami": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "enchanter",
+      "protect"
+    ]
+  },
+  "Nasus": {
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "splitpush",
+      "tank"
+    ]
+  },
+  "Nautilus": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "tank",
+      "pick"
+    ]
+  },
+  "Neeko": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "teamfight",
+      "pick"
+    ]
+  },
+  "Nidalee": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "early",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "skirmish"
+    ]
+  },
+  "Nilah": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "skirmish",
+      "hypercarry"
+    ],
+    "review": true
+  },
+  "Nocturne": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "pick"
+    ]
+  },
+  "Nunu": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "engage",
+      "pick",
+      "tank"
+    ]
+  },
+  "Olaf": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Orianna": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "protect",
+      "zone"
+    ]
+  },
+  "Ornn": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "tank",
+      "teamfight"
+    ]
+  },
+  "Pantheon": {
+    "roles": [
+      "top",
+      "support",
+      "jungle",
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "dive",
+      "roam"
+    ]
+  },
+  "Poppy": {
+    "roles": [
+      "support",
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "tank",
+      "protect",
+      "engage"
+    ]
+  },
+  "Pyke": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "roam"
+    ]
+  },
+  "Qiyana": {
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "burst",
+      "teamfight"
+    ]
+  },
+  "Quinn": {
+    "roles": [
+      "jungle",
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "splitpush",
+      "roam",
+      "pick"
+    ]
+  },
+  "Rakan": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "protect"
+    ]
+  },
+  "Rammus": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "tank",
+      "dive"
+    ]
+  },
+  "RekSai": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "pick"
+    ]
+  },
+  "Rell": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "tank",
+      "teamfight"
+    ]
+  },
+  "Renata": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "teamfight",
+      "enchanter"
+    ]
+  },
+  "Renekton": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Rengar": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "burst"
+    ]
+  },
+  "Riven": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "skirmish",
+      "splitpush",
+      "dive"
+    ]
+  },
+  "Rumble": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Ryze": {
+    "roles": [
+      "mid",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "skirmish"
+    ]
+  },
+  "Samira": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "dive",
+      "skirmish",
+      "teamfight"
+    ]
+  },
+  "Sejuani": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "tank",
+      "teamfight"
+    ]
+  },
+  "Senna": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 2,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "poke",
+      "protect"
+    ]
+  },
+  "Seraphine": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 2,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "enchanter",
+      "poke"
+    ]
+  },
+  "Sett": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "skirmish",
+      "tank"
+    ]
+  },
+  "Shaco": {
+    "roles": [
+      "jungle",
+      "support"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "pick",
+      "splitpush"
+    ]
+  },
+  "Shen": {
+    "roles": [
+      "top",
+      "support",
+      "jungle"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 3,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "splitpush",
+      "tank"
+    ]
+  },
+  "Shyvana": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 2,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "teamfight",
+      "skirmish"
+    ]
+  },
+  "Singed": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "splitpush",
+      "tank"
+    ]
+  },
+  "Sion": {
+    "roles": [
+      "top",
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 2,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "tank",
+      "splitpush"
+    ]
+  },
+  "Sivir": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "poke"
+    ]
+  },
+  "Skarner": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "engage",
+      "pick",
+      "tank"
+    ],
+    "review": true
+  },
+  "Smolder": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "poke"
+    ],
+    "review": true
+  },
+  "Sona": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "enchanter",
+      "teamfight"
+    ]
+  },
+  "Soraka": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "enchanter"
+    ]
+  },
+  "Swain": {
+    "roles": [
+      "support",
+      "adc",
+      "mid",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "zone"
+    ]
+  },
+  "Sylas": {
+    "roles": [
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "skirmish",
+      "dive",
+      "teamfight"
+    ]
+  },
+  "Syndra": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "burst",
+      "pick",
+      "zone"
+    ]
+  },
+  "TahmKench": {
+    "roles": [
+      "support",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "tank"
+    ]
+  },
+  "Taliyah": {
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "roam",
+      "teamfight"
+    ]
+  },
+  "Talon": {
+    "roles": [
+      "jungle",
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "burst",
+      "roam",
+      "pick"
+    ]
+  },
+  "Taric": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "teamfight"
+    ]
+  },
+  "Teemo": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "splitpush",
+      "poke"
+    ]
+  },
+  "Thresh": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 3,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "engage",
+      "pick",
+      "protect"
+    ]
+  },
+  "Tristana": {
+    "roles": [
+      "adc",
+      "mid"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "hypercarry",
+      "skirmish"
+    ]
+  },
+  "Trundle": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 1,
+    "objectiveControl": 3,
+    "tags": [
+      "splitpush",
+      "antitank"
+    ]
+  },
+  "Tryndamere": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "splitpush",
+      "hypercarry"
+    ]
+  },
+  "TwistedFate": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "pick",
+      "roam"
+    ]
+  },
+  "Twitch": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "teamfight",
+      "pick"
+    ]
+  },
+  "Udyr": {
+    "roles": [
+      "jungle",
+      "top"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 3,
+    "tags": [
+      "engage",
+      "skirmish",
+      "tank"
+    ]
+  },
+  "Urgot": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 0,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "antitank",
+      "tank"
+    ]
+  },
+  "Varus": {
+    "roles": [
+      "adc",
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "pick",
+      "engage"
+    ]
+  },
+  "Vayne": {
+    "roles": [
+      "adc",
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "antitank",
+      "splitpush"
+    ]
+  },
+  "Veigar": {
+    "roles": [
+      "mid",
+      "adc"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "burst",
+      "zone"
+    ]
+  },
+  "Velkoz": {
+    "roles": [
+      "support",
+      "mid",
+      "adc"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "poke",
+      "zone"
+    ]
+  },
+  "Vex": {
+    "roles": [
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "teamfight",
+      "pick"
+    ]
+  },
+  "Vi": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "pick",
+      "engage"
+    ]
+  },
+  "Viego": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "skirmish",
+      "dive"
+    ]
+  },
+  "Viktor": {
+    "roles": [
+      "mid",
+      "adc"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "poke",
+      "teamfight"
+    ]
+  },
+  "Vladimir": {
+    "roles": [
+      "mid",
+      "top"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 1,
+    "poke": 1,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "teamfight",
+      "burst"
+    ]
+  },
+  "Volibear": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 3,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "tank",
+      "engage"
+    ]
+  },
+  "Warwick": {
+    "roles": [
+      "jungle",
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Xayah": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "teamfight"
+    ]
+  },
+  "Xerath": {
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "poke"
+    ]
+  },
+  "XinZhao": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "early",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 1,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Yasuo": {
+    "roles": [
+      "mid",
+      "top",
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 2,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 0,
+    "waveclear": 3,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "skirmish"
+    ]
+  },
+  "Yone": {
+    "roles": [
+      "top",
+      "mid"
+    ],
+    "damageType": "mixed",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "late",
+    "engage": 2,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 2,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "teamfight",
+      "dive",
+      "skirmish"
+    ]
+  },
+  "Yorick": {
+    "roles": [
+      "top"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 1,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 0,
+    "objectiveControl": 3,
+    "tags": [
+      "splitpush"
+    ]
+  },
+  "Yunara": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 2,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry"
+    ],
+    "review": true
+  },
+  "Yuumi": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 3,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 0,
+    "splitpush": 0,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "enchanter"
+    ]
+  },
+  "Zaahen": {
+    "roles": [
+      "top",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 2,
+    "poke": 0,
+    "waveclear": 2,
+    "splitpush": 2,
+    "mobility": 2,
+    "objectiveControl": 1,
+    "tags": [
+      "skirmish",
+      "splitpush"
+    ],
+    "review": true
+  },
+  "Zac": {
+    "roles": [
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 3,
+    "disengage": 1,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 3,
+    "poke": 0,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "engage",
+      "dive",
+      "tank"
+    ]
+  },
+  "Zed": {
+    "roles": [
+      "mid",
+      "jungle"
+    ],
+    "damageType": "AD",
+    "damageProfile": "burst",
+    "range": "melee",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 0,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 3,
+    "mobility": 3,
+    "objectiveControl": 1,
+    "tags": [
+      "burst",
+      "splitpush",
+      "pick"
+    ]
+  },
+  "Zeri": {
+    "roles": [
+      "adc"
+    ],
+    "damageType": "AD",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "late",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 1,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 3,
+    "objectiveControl": 2,
+    "tags": [
+      "hypercarry",
+      "skirmish"
+    ]
+  },
+  "Ziggs": {
+    "roles": [
+      "adc",
+      "mid"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 1,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 3,
+    "splitpush": 1,
+    "mobility": 0,
+    "objectiveControl": 3,
+    "tags": [
+      "poke",
+      "zone"
+    ]
+  },
+  "Zilean": {
+    "roles": [
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "mixed",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 3,
+    "peel": 3,
+    "cc": 2,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 1,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "protect",
+      "poke"
+    ]
+  },
+  "Zoe": {
+    "roles": [
+      "mid",
+      "support"
+    ],
+    "damageType": "AP",
+    "damageProfile": "burst",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 0,
+    "disengage": 0,
+    "peel": 0,
+    "cc": 1,
+    "frontline": 0,
+    "poke": 3,
+    "waveclear": 2,
+    "splitpush": 0,
+    "mobility": 1,
+    "objectiveControl": 1,
+    "tags": [
+      "poke",
+      "pick",
+      "burst"
+    ]
+  },
+  "Zyra": {
+    "roles": [
+      "support",
+      "jungle"
+    ],
+    "damageType": "AP",
+    "damageProfile": "sustained",
+    "range": "ranged",
+    "scaling": "mid",
+    "engage": 1,
+    "disengage": 2,
+    "peel": 1,
+    "cc": 3,
+    "frontline": 0,
+    "poke": 2,
+    "waveclear": 3,
+    "splitpush": 0,
+    "mobility": 0,
+    "objectiveControl": 2,
+    "tags": [
+      "zone",
+      "teamfight",
+      "poke"
+    ]
+  }
+}

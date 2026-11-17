@@ -161,6 +161,76 @@
     "note": "Development-only page to review the Phase 2 components.",
     "champion": "Champion",
     "role": "Role",
-    "opponent": "Opponent"
+    "opponent": "Opponent",
+    "compTitle": "Compositions",
+    "teamA": "Team A",
+    "teamB": "Team B",
+    "teamHelp": "One champion per role (Top, Jungle, Mid, ADC, Support), comma separated."
+  },
+  "Comp": {
+    "radarTitle": "Composition profile",
+    "radarHelp": "Sum of the team's draft attributes, 0 to 10 (10 = five champions excellent at it).",
+    "showTable": "Show as table",
+    "attribute": "Attribute",
+    "attributes": {
+      "engage": "Engage",
+      "disengage": "Disengage",
+      "peel": "Peel",
+      "cc": "Crowd control",
+      "frontline": "Frontline",
+      "poke": "Poke",
+      "waveclear": "Waveclear",
+      "splitpush": "Split push",
+      "mobility": "Mobility",
+      "objectiveControl": "Objectives"
+    },
+    "archetypeTitle": "Play style",
+    "archetypes": {
+      "engage": "Engage",
+      "poke": "Poke",
+      "pick": "Pick",
+      "protect": "Protect the carry",
+      "splitpush": "Split push",
+      "dive": "Dive",
+      "skirmish": "Skirmish"
+    },
+    "damageTitle": "Damage profile",
+    "ad": "AD {pct}",
+    "ap": "AP {pct}",
+    "damageWarnings": {
+      "full_ad": "Almost all damage is physical: easy to itemize against (armor).",
+      "full_ap": "Almost all damage is magic: easy to itemize against (magic resist)."
+    },
+    "powerTitle": "Power curve",
+    "phases": {
+      "early": "Early",
+      "mid": "Mid",
+      "late": "Late"
+    },
+    "weaknessesTitle": "Weaknesses",
+    "strengthsTitle": "Strengths",
+    "none": "None",
+    "weaknesses": {
+      "no_frontline": "No frontline: nobody to absorb damage in fights.",
+      "no_engage": "Little engage: hard to start fights.",
+      "low_waveclear": "Low waveclear: struggles against sieges and lane pressure.",
+      "single_damage_type": "Only one damage type.",
+      "no_peel_for_carry": "Unprotected carry: little peel for the hypercarry.",
+      "vulnerable_to_poke": "Vulnerable to poke: little mobility against a poke team."
+    },
+    "strengths": {
+      "strong_frontline": "Solid frontline",
+      "strong_engage": "Strong engage",
+      "strong_peel": "Lots of peel",
+      "strong_cc": "Lots of crowd control",
+      "strong_waveclear": "Great waveclear",
+      "high_mobility": "High mobility",
+      "objective_control": "Good objective control",
+      "balanced_damage": "Balanced mixed damage",
+      "strong_early": "Strong early",
+      "strong_late": "Strong late game"
+    },
+    "unknown": "No attributes for: {names} (ignored in the analysis).",
+    "empty": "Pick champions to see the analysis."
   }
 }
