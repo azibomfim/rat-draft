@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import type { ComfortResult, LaneResult } from "../analysis/contract";
 import { compareComps } from "../comp/analyze";
 import type { Role } from "../data/types";
-import { ANALYST_HEADINGS, buildAnalystPrompt, type AnalystPromptInput } from "./prompts";
+import { ANALYST_HEADINGS, buildAnalystPrompt, buildCoachPrompt, buildSuggestExplainPrompt, type AnalystPromptInput } from "./prompts";
 
 const ROLES: Role[] = ["top", "jungle", "mid", "adc", "support"];
 const blue = ["Malphite", "Sejuani", "Orianna", "MissFortune", "Leona"];
@@ -76,5 +76,49 @@ describe("buildAnalystPrompt", () => {
     expect(prompt).toContain("comfort 81, 40 games");
     expect(prompt).toContain("no recorded games on this champion");
     expect(prompt).toMatch(/draft score \(0-100\): \d+/);
+  });
+});
+
+describe("buildCoachPrompt / buildSuggestExplainPrompt", () => {
+  const board = {
+    blue: { bans: ["Ahri", "Yone", "Ziggs"], picks: [{ championId: "Kennen", role: "top" as const }] },
+    red: { bans: ["Skarner", "Rell", "Ashe"], picks: [] },
+  };
+  const comps = {
+    blue: compareComps(board.blue.picks, []).a,
+    red: compareComps([], board.blue.picks).a,
+  };
+
+  it("coach prompt matches the snapshot", () => {
+    expect(
+      buildCoachPrompt({
+        locale: "pt",
+        style: "counter",
+        coachSide: "red",
+        step: { index: 7, phase: "pick1", side: "red", action: "pick", slot: 0 },
+        names: { Kennen: "Kennen", Malphite: "Malphite" },
+        board,
+        comps,
+        opponentPool: { top: { player: "Robo", champions: { Kennen: 93, Gnar: 84 } } },
+        openRoles: ["top", "jungle", "mid", "adc", "support"],
+        candidates: [
+          { championId: "Malphite", role: "top", score: 76, reasons: [{ code: "counters", championId: "Kennen", winRate: 0.525 }, { code: "adds_frontline" }] },
+        ],
+      }),
+    ).toMatchSnapshot();
+  });
+
+  it("explain prompt matches the snapshot and forbids restating scores", () => {
+    const p = buildSuggestExplainPrompt({
+      locale: "en",
+      action: "pick",
+      side: "blue",
+      names: {},
+      board,
+      items: [{ championId: "Gnar", role: "top", label: "score 75", reasons: [{ code: "comfort", player: "Robo", comfort: 84 }] }],
+    });
+    expect(p.prompt).toContain("Do NOT restate the scores");
+    expect(p.prompt).toContain("comfort of Robo 84");
+    expect(p).toMatchSnapshot();
   });
 });

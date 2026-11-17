@@ -124,3 +124,20 @@ export interface DataErrorInfo {
 export type PlayerResult =
   | { riotId: RiotId; ok: true; profile: PlayerProfile }
   | { riotId: RiotId; ok: false; error: DataErrorInfo };
+
+/** One champion in a role's meta tier list. */
+export interface LaneMetaEntry {
+  championId: string;
+  role: Role;
+  /** 1 (strongest) to 5. */
+  tier: number;
+  winRate: number;
+  pickRate: number;
+  banRate: number;
+  roleRate: number;
+}
+
+export type LaneMeta = Record<Role, LaneMetaEntry[]>;
+
+/** Matchup table of a champion in a role: opponent → games and wins (of the champion). */
+export type MatchupTable = Record<string, { games: number; wins: number }>;

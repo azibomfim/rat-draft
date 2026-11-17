@@ -74,7 +74,112 @@
     }
   },
   "Simulator": {
-    "title": "Simulador de draft"
+    "title": "Simulador de draft",
+    "intro": "Faça o lado do seu time num draft de torneio. A IA faz o lado inimigo como se fosse o coach adversário, e o site sugere bans, picks e respostas a cada turno.",
+    "setup": {
+      "title": "Configuração",
+      "side": "Seu lado",
+      "yourTeam": "Seu time",
+      "teamLoaded": "{count, plural, one {# jogador carregado} other {# jogadores carregados}} do time salvo ({ago}).",
+      "noTeam": "Nenhum time salvo: as sugestões não vão considerar o conforto. Carregue o time na página Time.",
+      "enemyTeam": "Time inimigo (opcional)",
+      "enemyHelp": "Cole o multi OP.GG ou os Riot IDs do adversário. O coach vai usar o pool deles.",
+      "enemyPlaceholder": "https://op.gg/multisearch/br?summoners=...",
+      "enemyLoad": "Carregar adversário",
+      "enemyLoading": "Carregando…",
+      "enemyLoaded": "{count, plural, one {# jogador do adversário carregado} other {# jogadores do adversário carregados}}.",
+      "enemyFailed": "Não foi possível carregar: {names}",
+      "enemyNone": "Nenhum Riot ID encontrado.",
+      "style": "Estilo do coach",
+      "styles": {
+        "meta": "Meta",
+        "counter": "Counter",
+        "balanced": "Equilibrado"
+      },
+      "styleHelp": {
+        "meta": "Escolhas fortes do patch.",
+        "counter": "Foco em anular o seu time.",
+        "balanced": "Mistura meta, counters e composição."
+      },
+      "start": "Começar draft"
+    },
+    "turn": "Passo {n} de 20 · {phase}",
+    "phases": {
+      "ban1": "Bans 1",
+      "pick1": "Picks 1",
+      "ban2": "Bans 2",
+      "pick2": "Picks 2"
+    },
+    "next": "{side} {action}",
+    "actions": {
+      "ban": "bane",
+      "pick": "escolhe"
+    },
+    "you": "(você)",
+    "coach": "(coach IA)",
+    "yourTurnBan": "Sua vez: escolha um campeão para banir.",
+    "yourTurnPick": "Sua vez: escolha um campeão e a rota.",
+    "pickFor": "{champion} vai para:",
+    "playerFor": "{role} · {player}",
+    "cancel": "Cancelar",
+    "coachThinking": "Coach pensando…",
+    "coachCancelled": "Você cancelou o coach.",
+    "coachRetry": "Tentar de novo",
+    "coachAuto": "Escolher pelas regras",
+    "coachError": "Não foi possível falar com o coach agora.",
+    "coachSays": "Coach do lado {side}",
+    "coachRules": "Decidido pelo motor de regras (IA indisponível).",
+    "coachChose": "{action, select, ban {Baniu} other {Escolheu}} {champion}.",
+    "undo": "Desfazer",
+    "restart": "Recomeçar draft",
+    "newSetup": "Mudar configuração",
+    "suggestions": {
+      "ban": "Sugestões de ban",
+      "pick": "Sugestões de pick",
+      "loading": "Calculando sugestões…",
+      "error": "Não foi possível calcular as sugestões agora.",
+      "none": "Sem sugestões para esta rota.",
+      "explain": "Explicar com IA",
+      "explaining": "A IA está explicando…",
+      "aiUnavailable": "Explicação por IA indisponível.",
+      "aiError": "A IA não respondeu; as pontuações continuam valendo.",
+      "parts": {
+        "comfort": "Conforto {value}",
+        "meta": "Meta {value}",
+        "counter": "Counter {value}",
+        "fit": "Encaixe {value}"
+      },
+      "total": "Total {value}",
+      "noComfort": "sem time"
+    },
+    "reasons": {
+      "comfort": "Conforto de {player} ({comfort})",
+      "meta": "Tier {tier} no patch",
+      "meta_ban": "Tier {tier} no {role}",
+      "counters": "Vence {champion} na rota ({rate})",
+      "countered": "Perde para {champion} na rota ({rate})",
+      "adds_frontline": "Traz linha de frente",
+      "adds_engage": "Traz engage",
+      "balances_damage": "Equilibra o dano ({type})",
+      "same_damage": "Mais dano {type}: fica previsível",
+      "adds_peel": "Protege o carry",
+      "protected_carry": "Carry com boa proteção",
+      "adds_waveclear": "Melhora a limpeza de wave",
+      "reinforces": "Reforça o estilo {archetype}",
+      "enemy_comfort": "Conforto de {player} ({comfort})",
+      "counters_yours": "Vence o seu {champion} ({rate})",
+      "fits_enemy": "Encaixa na composição inimiga",
+      "high_ban_rate": "Muito banido ({rate})"
+    },
+    "compTitle": "Composição ao vivo",
+    "lanesTitle": "Confrontos de rota",
+    "laneHint": "Clique em um confronto para ver o matchup.",
+    "close": "Fechar",
+    "done": {
+      "title": "Draft completo!",
+      "swapHelp": "Ajuste as rotas do seu time trocando-as no tabuleiro, como no jogo.",
+      "analyze": "Analisar este draft"
+    }
   },
   "Analyze": {
     "title": "Analisar draft",

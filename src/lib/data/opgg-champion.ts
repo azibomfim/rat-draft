@@ -15,7 +15,7 @@
  */
 import type { ChampionIndex } from "./champion-id";
 import { asArray, asNumber, asObject, asString, getPath, parseOpggText, type OpggValue } from "./opgg-format";
-import type { ChampionMeta, LaneMatchup, LaneSide, MatchupStat, PlayStyle, PowerPoint, Role } from "./types";
+import type { ChampionMeta, LaneMatchup, LaneMeta, LaneMetaEntry, LaneSide, MatchupStat, PlayStyle, PowerPoint, Role } from "./types";
 import { ROLES } from "./types";
 
 /** "Kai'Sa" → "KAISA", "Dr. Mundo" → "DR_MUNDO", "Nunu & Willump" → "NUNU_WILLUMP". */
@@ -230,4 +230,31 @@ export function laneMatchupFromGuides(ab: MatchupGuide, ba: MatchupGuide | null,
     powerCurve: { a: ab.powerCurve, b: ba?.powerCurve ?? [] },
     fetchedAt: new Date(opts.now ?? Date.now()).toISOString(),
   };
+}
+
+export const META_FIELDS = ROLES.map(
+  (r) => `data.positions.${r}[].{champion,tier,win_rate,pick_rate,ban_rate,role_rate}`,
+);
+
+/** lol_list_lane_meta_champions → LaneMeta (tier list per role). */
+export function laneMetaFromOpgg(text: string, index: ChampionIndex): LaneMeta {
+  const root = parseOpggText(text);
+  const meta = Object.fromEntries(ROLES.map((r) => [r, [] as LaneMetaEntry[]])) as unknown as LaneMeta;
+  for (const role of ROLES) {
+    for (const raw of asArray(getPath(root, `data.positions.${role}`))) {
+      const c = asObject(raw);
+      const championId = index.resolve(asString(c?.champion));
+      if (!championId) continue;
+      meta[role].push({
+        championId,
+        role,
+        tier: asNumber(c?.tier) ?? 5,
+        winRate: round4(asNumber(c?.win_rate) ?? 0.5),
+        pickRate: round4(asNumber(c?.pick_rate) ?? 0),
+        banRate: round4(asNumber(c?.ban_rate) ?? 0),
+        roleRate: round4(asNumber(c?.role_rate) ?? 0),
+      });
+    }
+  }
+  return meta;
 }

@@ -10,7 +10,7 @@ import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/
 import { ErrorCode, McpError } from "@modelcontextprotocol/sdk/types.js";
 import type { ChampionIndex } from "./champion-id";
 import { DEFAULT_TIMEOUT_MS, DataSourceError, withTimeout, type DataErrorCode } from "./errors";
-import { analysisFields, toOpggChampionName } from "./opgg-champion";
+import { analysisFields, META_FIELDS, toOpggChampionName } from "./opgg-champion";
 import { MATCH_FIELDS, MATCH_LIMIT, PROFILE_FIELDS, profileFromOpgg } from "./opgg-player";
 import type { PlayerProfile, Region, RiotId, Role } from "./types";
 
@@ -172,4 +172,9 @@ export function fetchOpggMatchupGuide(role: Role, myEnglishName: string, opponen
 /** Closes the shared connection (used by scripts). */
 export async function closeOpgg(): Promise<void> {
   await resetClient();
+}
+
+/** Raw lol_list_lane_meta_champions text for every role. */
+export function fetchOpggLaneMeta(): Promise<string> {
+  return callOpggTool("lol_list_lane_meta_champions", { position: "all", desired_output_fields: META_FIELDS });
 }

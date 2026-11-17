@@ -12,6 +12,11 @@ interface Props {
   onSlotClick: (slot: DraftSlot) => void;
   /** Free mode: role selectors and clear buttons. The simulator turns these off. */
   editableRoles?: boolean;
+  /** Restrict role selectors to these sides (default: both). */
+  editableSides?: DraftSide[];
+  /** Side shown as "you" (label only). */
+  userSide?: DraftSide;
+  youLabel?: string;
   onRoleChange?: (side: DraftSide, index: number, role: Role) => void;
   onClear?: (slot: DraftSlot) => void;
   /** Optional per-pick extra content (e.g. player input). */
@@ -27,7 +32,18 @@ const sameSlot = (a: DraftSlot | null, b: DraftSlot) =>
   !!a && a.side === b.side && a.kind === b.kind && a.index === b.index;
 
 /** Two-column draft board: 5 bans + 5 picks per side. Shared by the analyzer and the simulator. */
-export function DraftBoard({ board, activeSlot, onSlotClick, editableRoles, onRoleChange, onClear, renderPickExtra }: Props) {
+export function DraftBoard({
+  board,
+  activeSlot,
+  onSlotClick,
+  editableRoles,
+  editableSides,
+  userSide,
+  youLabel,
+  onRoleChange,
+  onClear,
+  renderPickExtra,
+}: Props) {
   const t = useTranslations("Draft");
   const tRoles = useTranslations("Roles");
   const name = useChampionName();
@@ -36,7 +52,10 @@ export function DraftBoard({ board, activeSlot, onSlotClick, editableRoles, onRo
     <div className="grid gap-3 md:grid-cols-2">
       {SIDES.map((side) => (
         <section key={side} className={`rounded-lg border p-3 ${SIDE_STYLE[side]}`} aria-label={t(`sides.${side}`)}>
-          <h3 className="mb-2 font-semibold">{t(`sides.${side}`)}</h3>
+          <h3 className="mb-2 font-semibold">
+            {t(`sides.${side}`)}
+            {userSide === side && youLabel && <span className="ml-1 text-sm font-normal opacity-70">{youLabel}</span>}
+          </h3>
 
           <p className="mb-1 text-xs font-semibold uppercase opacity-70">{t("bans")}</p>
           <ul className="mb-3 flex gap-1.5">
@@ -95,7 +114,7 @@ export function DraftBoard({ board, activeSlot, onSlotClick, editableRoles, onRo
                     )}
                     <span className="truncate">{pick.championId ? name(pick.championId) : t("emptyPick")}</span>
                   </button>
-                  {editableRoles && onRoleChange ? (
+                  {editableRoles && onRoleChange && (!editableSides || editableSides.includes(side)) ? (
                     <select
                       value={pick.role ?? ""}
                       onChange={(e) => onRoleChange(side, index, e.target.value as Role)}

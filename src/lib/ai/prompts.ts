@@ -9,6 +9,8 @@
 import type { ComfortResult, LaneResult } from "../analysis/contract";
 import type { CompAnalysis, CompComparison } from "../comp/analyze";
 import type { Role } from "../data/types";
+import type { DraftStep } from "../draft/order";
+import type { BanReason, PickReason, SimpleBoard, TeamPool } from "../draft/scoring";
 import type { DraftSide } from "../draft/types";
 
 export type PromptLocale = "pt" | "en";
@@ -52,6 +54,9 @@ export function baseSystemPrompt(locale: PromptLocale): string {
     "Only quote a number together with the exact item it belongs to in the data (same lane, same champion). Do not quote internal score points or factor values; describe them in words.",
     "Never write internal codes from the data (like no_frontline, vulnerable_to_poke, archetype_identity); say what they mean in plain words.",
     `Always answer in ${LANGUAGE[locale]}.`,
+    locale === "pt"
+      ? "Write numbers in Brazilian format (decimal comma: 53,2%)."
+      : "Write numbers in English format (decimal point: 53.2%).",
     "Keep answers short and scannable: bullet points, no filler, no introduction or conclusion paragraphs.",
   ].join("\n");
 }
@@ -179,4 +184,157 @@ export function buildAnalystPrompt(input: AnalystPromptInput): { system: string;
   ].join("\n");
 
   return { system: baseSystemPrompt(input.locale), prompt };
+}
+
+/* ------------------------------------------------------------------ */
+/* Simulator: enemy coach and suggestion explanations                  */
+/* ------------------------------------------------------------------ */
+
+
+export type CoachStylePrompt = "meta" | "counter" | "balanced";
+
+const STYLE_TEXT: Record<CoachStylePrompt, string> = {
+  meta: "META: prefer the strongest champions of the current patch (tier and win rate).",
+  counter: "COUNTER: focus on shutting down the opponent: counter their lane picks and ban their comfort champions.",
+  balanced: "BALANCED: mix patch strength, counters, your players' comfort and team composition.",
+};
+
+/** Compact description of a rule reason for prompts (codes are for the model only). */
+export function describeReason(r: BanReason | PickReason, n: (id: string) => string): string {
+  switch (r.code) {
+    case "comfort":
+      return `comfort of ${r.player} ${r.comfort}`;
+    case "meta":
+      return `meta tier ${r.tier}`;
+    case "counters":
+      return `wins ${pct(r.winRate)} vs ${n(r.championId)} in lane`;
+    case "countered":
+      return `loses lane vs ${n(r.championId)} (${pct(r.winRate)})`;
+    case "enemy_comfort":
+      return `comfort pick of ${r.player} (${r.comfort})`;
+    case "counters_yours":
+      return `beats ${n(r.championId)} (${pct(r.winRate)})`;
+    case "fits_enemy":
+      return "fits the enemy comp";
+    case "high_ban_rate":
+      return `ban rate ${pct(r.banRate)}`;
+    case "balances_damage":
+      return `adds ${r.type} damage`;
+    case "same_damage":
+      return `more ${r.type} damage (one-dimensional)`;
+    case "reinforces":
+      return `reinforces ${r.archetype}`;
+    default:
+      return r.code.replace(/_/g, " ");
+  }
+}
+
+function boardLines(board: SimpleBoard, locale: PromptLocale, n: (id: string) => string): string[] {
+  return (["blue", "red"] as const).map((side) => {
+    const b = board[side];
+    return `  ${SIDE_NAME[locale][side]}: bans [${b.bans.map(n).join(", ")}]; picks [${b.picks
+      .map((p) => `${ROLE_NAME[locale][p.role]} ${n(p.championId)}`)
+      .join(", ")}]`;
+  });
+}
+
+function poolLines(pool: TeamPool | undefined, label: string, n: (id: string) => string): string[] {
+  if (!pool) return [`  ${label}: unknown players`];
+  return Object.entries(pool).flatMap(([role, p]) => {
+    if (!p) return [];
+    const top = Object.entries(p.champions)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 5)
+      .map(([id, c]) => `${n(id)} ${c}`)
+      .join(", ");
+    return [`  ${label} ${role} (${p.player}): ${top || "no data"}`];
+  });
+}
+
+export interface CoachCandidate {
+  championId: string;
+  role?: Role;
+  score: number;
+  reasons: (BanReason | PickReason)[];
+}
+
+export interface CoachPromptInput {
+  locale: PromptLocale;
+  style: CoachStylePrompt;
+  coachSide: DraftSide;
+  step: DraftStep;
+  names: Record<string, string>;
+  board: SimpleBoard;
+  comps: Record<DraftSide, CompAnalysis>;
+  coachPool?: TeamPool;
+  opponentPool?: TeamPool;
+  openRoles: Role[];
+  candidates: CoachCandidate[];
+}
+
+/** Prompt for the enemy coach's next ban or pick. The answer is a JSON object (validated with zod). */
+export function buildCoachPrompt(input: CoachPromptInput): { system: string; prompt: string } {
+  const { locale, step, coachSide } = input;
+  const n = (id: string) => input.names[id] ?? id;
+  const me = SIDE_NAME[locale][coachSide];
+  const them = SIDE_NAME[locale][coachSide === "blue" ? "red" : "blue"];
+  const lines = [
+    `You are the head coach of the ${me} side in a League of Legends tournament draft (fearless off), playing against a human coach on ${them}.`,
+    `Your coaching style: ${STYLE_TEXT[input.style]}`,
+    `It is now step ${step.index + 1} of 20 (${step.phase}): you must ${step.action.toUpperCase()} one champion.`,
+    step.action === "pick" ? `Open roles for your team: ${input.openRoles.map((r) => ROLE_NAME[locale][r]).join(", ")}. Pick for one of them and give its role.` : "Bans have no role (role: null).",
+    "Choose ONE available champion (not banned or picked yet). Prefer the candidates below; you may choose another available champion only with a clear reason.",
+    `reasoning: 2-3 short sentences in ${LANGUAGE[locale]}, spoken as the coach, explaining the choice with the data. No internal codes.`,
+    "",
+    "DATA:",
+    "Board:",
+    ...boardLines(input.board, locale, n),
+    `${me} comp so far:`,
+    ...describeComp(input.comps[coachSide]),
+    `${them} comp so far:`,
+    ...describeComp(input.comps[coachSide === "blue" ? "red" : "blue"]),
+    "Players (comfort 0-100):",
+    ...poolLines(input.coachPool, me, n),
+    ...poolLines(input.opponentPool, them, n),
+    "Candidates from the rule engine (higher score = better for you):",
+    ...input.candidates.map(
+      (c) =>
+        `  ${n(c.championId)}${c.role ? ` (${ROLE_NAME[locale][c.role]})` : ""}: score ${c.score}; ${c.reasons.map((r) => describeReason(r, n)).join("; ") || "no notes"}`,
+    ),
+  ];
+  return { system: baseSystemPrompt(locale), prompt: lines.join("\n") };
+}
+
+export interface ExplainItem {
+  championId: string;
+  role?: Role;
+  label: string;
+  reasons: (BanReason | PickReason)[];
+}
+
+/** Prompt for one-line explanations of the suggestions (optional). */
+export function buildSuggestExplainPrompt(input: {
+  locale: PromptLocale;
+  action: "ban" | "pick";
+  side: DraftSide;
+  names: Record<string, string>;
+  board: SimpleBoard;
+  items: ExplainItem[];
+}): { system: string; prompt: string } {
+  const n = (id: string) => input.names[id] ?? id;
+  const lines = [
+    `The user (${SIDE_NAME[input.locale][input.side]} side) must ${input.action} in a tournament draft. For EACH suggestion below write one short line (max 120 characters) in ${LANGUAGE[input.locale]} explaining why it is a good ${input.action}, using only the given numbers and reasons.`,
+    "Do NOT restate the scores; the user already sees them. Say in plain words what makes it good: whose comfort pick it is, which lane opponent it beats, what it adds to the team (frontline, engage, damage type), or why it is strong this patch.",
+    "Return one item per suggestion, with the same championId.",
+    "",
+    "DATA:",
+    "Board:",
+    ...boardLines(input.board, input.locale, n),
+    "Suggestions:",
+    ...input.items.map(
+      (i) =>
+        `  championId=${i.championId} (${n(i.championId)}${i.role ? `, ${ROLE_NAME[input.locale][i.role]}` : ""}): ${i.label}; ${i.reasons.map((r) => describeReason(r, n)).join("; ")}`,
+    ),
+  ];
+  return { system: baseSystemPrompt(input.locale), prompt: lines.join("\n") };
 }

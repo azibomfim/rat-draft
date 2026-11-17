@@ -3,9 +3,15 @@ import { cache, TTL } from "./cache";
 import type { ChampionIndex } from "./champion-id";
 import { getChampionIndex } from "./champion-index";
 import { DataSourceError } from "./errors";
-import { fetchOpggChampionAnalysis, fetchOpggMatchupGuide } from "./opgg";
-import { championMetaFromOpgg, laneMatchupFromGuides, parseMatchupGuide, type MatchupGuide } from "./opgg-champion";
-import type { ChampionMeta, LaneMatchup, Role } from "./types";
+import { fetchOpggChampionAnalysis, fetchOpggLaneMeta, fetchOpggMatchupGuide } from "./opgg";
+import {
+  championMetaFromOpgg,
+  laneMatchupFromGuides,
+  laneMetaFromOpgg,
+  parseMatchupGuide,
+  type MatchupGuide,
+} from "./opgg-champion";
+import type { ChampionMeta, LaneMatchup, LaneMeta, MatchupTable, Role } from "./types";
 
 function englishName(index: ChampionIndex, id: string): string {
   const name = index.nameOf(id);
@@ -69,4 +75,17 @@ export async function getLaneMatchup(role: Role, a: string, b: string): Promise<
     ]);
     return laneMatchupFromGuides(ab, ba, { role, a, b, index });
   });
+}
+
+/** Tier list of every role (current patch), cached 6 h. */
+export async function getLaneMeta(): Promise<LaneMeta> {
+  const index = await getChampionIndex();
+  return cache.getOrLoad("opgg:lane-meta", TTL.champion, async () => laneMetaFromOpgg(await fetchOpggLaneMeta(), index));
+}
+
+/** Full matchup table of a champion in a role (opponent → games/wins), or null if unavailable. */
+export async function getMatchupTableFor(role: Role, championId: string): Promise<MatchupTable | null> {
+  const index = await getChampionIndex();
+  const table = await getMatchupTable(index, role, championId);
+  return table ? Object.fromEntries(table) : null;
 }

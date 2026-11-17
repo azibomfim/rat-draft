@@ -74,7 +74,112 @@
     }
   },
   "Simulator": {
-    "title": "Draft simulator"
+    "title": "Draft simulator",
+    "intro": "Draft for your team in a tournament draft. The AI plays the enemy side as the opposing coach, and the site suggests bans, picks and answers every turn.",
+    "setup": {
+      "title": "Setup",
+      "side": "Your side",
+      "yourTeam": "Your team",
+      "teamLoaded": "{count, plural, one {# player loaded} other {# players loaded}} from the saved team ({ago}).",
+      "noTeam": "No saved team: suggestions will not consider comfort. Load the team on the Team page.",
+      "enemyTeam": "Enemy team (optional)",
+      "enemyHelp": "Paste the opponent's multi OP.GG or Riot IDs. The coach will use their pool.",
+      "enemyPlaceholder": "https://op.gg/multisearch/br?summoners=...",
+      "enemyLoad": "Load opponent",
+      "enemyLoading": "Loading…",
+      "enemyLoaded": "{count, plural, one {# opponent player loaded} other {# opponent players loaded}}.",
+      "enemyFailed": "Could not load: {names}",
+      "enemyNone": "No Riot ID found.",
+      "style": "Coach style",
+      "styles": {
+        "meta": "Meta",
+        "counter": "Counter",
+        "balanced": "Balanced"
+      },
+      "styleHelp": {
+        "meta": "Strong picks of the patch.",
+        "counter": "Focused on shutting down your team.",
+        "balanced": "Mixes meta, counters and composition."
+      },
+      "start": "Start draft"
+    },
+    "turn": "Step {n} of 20 · {phase}",
+    "phases": {
+      "ban1": "Bans 1",
+      "pick1": "Picks 1",
+      "ban2": "Bans 2",
+      "pick2": "Picks 2"
+    },
+    "next": "{side} {action}",
+    "actions": {
+      "ban": "bans",
+      "pick": "picks"
+    },
+    "you": "(you)",
+    "coach": "(AI coach)",
+    "yourTurnBan": "Your turn: choose a champion to ban.",
+    "yourTurnPick": "Your turn: choose a champion and its role.",
+    "pickFor": "{champion} goes to:",
+    "playerFor": "{role} · {player}",
+    "cancel": "Cancel",
+    "coachThinking": "Coach is thinking…",
+    "coachCancelled": "You cancelled the coach.",
+    "coachRetry": "Try again",
+    "coachAuto": "Let the rules decide",
+    "coachError": "Could not reach the coach right now.",
+    "coachSays": "{side} side coach",
+    "coachRules": "Decided by the rule engine (AI unavailable).",
+    "coachChose": "{action, select, ban {Banned} other {Picked}} {champion}.",
+    "undo": "Undo",
+    "restart": "Restart draft",
+    "newSetup": "Change setup",
+    "suggestions": {
+      "ban": "Ban suggestions",
+      "pick": "Pick suggestions",
+      "loading": "Computing suggestions…",
+      "error": "Could not compute suggestions right now.",
+      "none": "No suggestions for this role.",
+      "explain": "Explain with AI",
+      "explaining": "The AI is explaining…",
+      "aiUnavailable": "AI explanation unavailable.",
+      "aiError": "The AI did not answer; the scores still apply.",
+      "parts": {
+        "comfort": "Comfort {value}",
+        "meta": "Meta {value}",
+        "counter": "Counter {value}",
+        "fit": "Fit {value}"
+      },
+      "total": "Total {value}",
+      "noComfort": "no team"
+    },
+    "reasons": {
+      "comfort": "{player}'s comfort ({comfort})",
+      "meta": "Tier {tier} this patch",
+      "meta_ban": "Tier {tier} in {role}",
+      "counters": "Beats {champion} in lane ({rate})",
+      "countered": "Loses to {champion} in lane ({rate})",
+      "adds_frontline": "Adds frontline",
+      "adds_engage": "Adds engage",
+      "balances_damage": "Balances damage ({type})",
+      "same_damage": "More {type} damage: predictable",
+      "adds_peel": "Protects the carry",
+      "protected_carry": "Well-protected carry",
+      "adds_waveclear": "Improves waveclear",
+      "reinforces": "Reinforces the {archetype} style",
+      "enemy_comfort": "{player}'s comfort ({comfort})",
+      "counters_yours": "Beats your {champion} ({rate})",
+      "fits_enemy": "Fits the enemy comp",
+      "high_ban_rate": "Often banned ({rate})"
+    },
+    "compTitle": "Live composition",
+    "lanesTitle": "Lane matchups",
+    "laneHint": "Click a matchup to see it.",
+    "close": "Close",
+    "done": {
+      "title": "Draft complete!",
+      "swapHelp": "Adjust your team's roles by swapping them on the board, like in game.",
+      "analyze": "Analyze this draft"
+    }
   },
   "Analyze": {
     "title": "Analyze draft",
