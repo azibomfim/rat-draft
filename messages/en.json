@@ -15,10 +15,31 @@
   },
   "Home": {
     "title": "Draft Analyst",
-    "subtitle": "Analyze your team's accounts, simulate tournament drafts against an AI coach and review match drafts."
-  },
-  "Placeholder": {
-    "comingSoon": "Under construction."
+    "subtitle": "Analyze your team's accounts, simulate tournament drafts against an AI coach and review match drafts.",
+    "features": {
+      "team": {
+        "title": "Analyze the team",
+        "description": "Paste the team's multi OP.GG and see each player's rank, recent form, champion pool and comfort score, with alerts like shallow pool or one-trick.",
+        "cta": "Go to Team"
+      },
+      "simulator": {
+        "title": "Simulate a draft",
+        "description": "Draft your side of a tournament draft against an AI acting as the opposing coach. Get ban and pick suggestions with the score explained.",
+        "cta": "Go to the Simulator"
+      },
+      "analyze": {
+        "title": "Analyze a draft",
+        "description": "Build or paste a match's bans and picks and see who came out ahead, the compositions, the matchups and the win conditions.",
+        "cta": "Go to Analyze"
+      }
+    },
+    "howTitle": "How to use",
+    "steps": {
+      "one": "Load your team on the Team page. It is saved in this browser.",
+      "two": "In the simulator, suggestions then take each player's comfort into account.",
+      "three": "When the draft ends, open the full analysis and copy it to your team's Discord."
+    },
+    "dataNote": "Player and meta data come from OP.GG; champion images come from Riot's Data Dragon. The rule-based analysis always works; the AI-written part needs a configured key."
   },
   "Team": {
     "title": "Team",
@@ -442,5 +463,21 @@
     "filling": "Choosing: {slot}",
     "slotBan": "{side} · ban {n}",
     "slotPick": "{side} · pick {n}"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "body": "This address does not exist or was moved.",
+    "backHome": "Back to home"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong",
+    "body": "An unexpected error happened on this page. Try again; if it keeps happening, go back home.",
+    "retry": "Try again",
+    "backHome": "Back to home"
+  },
+  "PageTitles": {
+    "team": "Team",
+    "simulator": "Simulator",
+    "analyze": "Analyze draft"
   }
 }

@@ -1,8 +1,18 @@
 import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Suspense, use } from "react";
 import { AnalyzePage } from "@/components/analyze/AnalyzePage";
 import { ChampionDataLoader } from "@/components/champions/ChampionDataLoader";
+
+export async function generateMetadata({ params }: PageProps<"/[locale]/analisar">): Promise<Metadata> {
+  const { locale } = await params;
+  const [t, tm] = await Promise.all([
+    getTranslations({ locale, namespace: "PageTitles" }),
+    getTranslations({ locale, namespace: "Metadata" }),
+  ]);
+  return { title: `${t("analyze")} · ${tm("title")}` };
+}
 
 export default function Page({ params }: PageProps<"/[locale]/analisar">) {
   const { locale } = use(params);

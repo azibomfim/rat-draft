@@ -15,10 +15,31 @@
   },
   "Home": {
     "title": "Analista de Draft",
-    "subtitle": "Analise as contas do seu time, simule drafts de torneio contra um coach com IA e revise drafts de partidas."
-  },
-  "Placeholder": {
-    "comingSoon": "Em construção."
+    "subtitle": "Analise as contas do seu time, simule drafts de torneio contra um coach com IA e revise drafts de partidas.",
+    "features": {
+      "team": {
+        "title": "Analise o time",
+        "description": "Cole o multi OP.GG do time e veja elo, forma recente, pool de campeões e a nota de conforto de cada jogador, com alertas como pool raso ou one-trick.",
+        "cta": "Ir para Time"
+      },
+      "simulator": {
+        "title": "Simule um draft",
+        "description": "Faça o seu lado num draft de torneio contra uma IA que age como o coach adversário. Receba sugestões de ban e pick com a pontuação explicada.",
+        "cta": "Ir para o Simulador"
+      },
+      "analyze": {
+        "title": "Analise um draft",
+        "description": "Monte ou cole os bans e picks de uma partida e veja quem saiu na frente, as composições, os matchups e as condições de vitória.",
+        "cta": "Ir para Analisar"
+      }
+    },
+    "howTitle": "Como usar",
+    "steps": {
+      "one": "Carregue o seu time na página Time. Ele fica salvo neste navegador.",
+      "two": "No simulador, as sugestões passam a considerar o conforto de cada jogador.",
+      "three": "Ao fim do draft, abra a análise completa e copie para o Discord do time."
+    },
+    "dataNote": "Dados de jogadores e do meta vêm do OP.GG; imagens dos campeões vêm do Data Dragon da Riot. A análise por regras funciona sempre; a parte escrita pela IA depende de uma chave configurada."
   },
   "Team": {
     "title": "Time",
@@ -442,5 +463,21 @@
     "filling": "Escolhendo: {slot}",
     "slotBan": "{side} · ban {n}",
     "slotPick": "{side} · pick {n}"
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "body": "O endereço não existe ou foi movido.",
+    "backHome": "Voltar ao início"
+  },
+  "ErrorPage": {
+    "title": "Algo deu errado",
+    "body": "Ocorreu um erro inesperado nesta página. Tente de novo; se continuar, volte ao início.",
+    "retry": "Tentar de novo",
+    "backHome": "Voltar ao início"
+  },
+  "PageTitles": {
+    "team": "Time",
+    "simulator": "Simulador",
+    "analyze": "Analisar draft"
   }
 }
