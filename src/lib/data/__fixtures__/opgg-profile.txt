@@ -1,0 +1,11 @@
+class LolGetSummonerProfile: data
+class Data: summoner
+class Summoner: game_name,tagline,updated_at,league_stats,ranked_most_champions
+class LeagueStat: game_type,tier_info,win,lose
+class TierInfo: tier,division,lp
+class RankedMostChampions: my_champion_stats
+class MyChampionStat: id,play,win,lose,basic,champion_name
+class Basic: kill,death,assist
+
+LolGetSummonerProfile(Data(Summoner("Robo","ROBS","2026-11-18T05:52:20+09:00",[LeagueStat("SOLORANKED",TierInfo("CHALLENGER",1,2106),660,584),LeagueStat("FLEXRANKED",TierInfo("EMERALD",1,75),7,10),LeagueStat("ARENA",TierInfo(null,null,null),null,null)],RankedMostChampions([MyChampionStat(134,37,21,16,Basic(341,251,241),"Syndra"),MyChampionStat(15,36,21,15,Basic(255,227,290),"Sivir"),MyChampionStat(85,35,23,12,Basic(242,214,182),"Kennen"),MyChampionStat(904,35,19,16,Basic(169,200,157),"Zaahen"),MyChampionStat(67,34,17,17,Basic(218,260,167),"Vayne"),MyChampionStat(150,31,18,13,Basic(126,174,144),"Gnar"),MyChampionStat(110,30,15,15,Basic(252,232,161),"Varus"),MyChampionStat(24,29,19,10,Basic(187,199,157),"Jax"),MyChampionStat(51,29,14,15,Basic(224,225,180),"Caitlyn"),MyChampionStat(777,27,14,13,Basic(159,192,113),"Yone")]))))
+OP.GG page: https://www.op.gg/summoners/br/Robo-ROBS?utm_source=opgg_mcp&utm_medium=mcp&utm_campaign=5f760f506101

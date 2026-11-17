@@ -21,12 +21,84 @@
     "comingSoon": "Under construction."
   },
   "Team": {
-    "title": "Team"
+    "title": "Team",
+    "intro": "Paste a multi OP.GG link, profile links or Riot IDs (one per line or comma separated) to analyze the team's accounts.",
+    "inputLabel": "Players",
+    "inputPlaceholder": "https://op.gg/multisearch/br?summoners=...\nor\nName#BR1, Other#BR1",
+    "load": "Analyze accounts",
+    "loading": "Fetching…",
+    "clear": "Clear team",
+    "refresh": "Refresh",
+    "updatedAgo": "Updated {ago}",
+    "dataNotice": "Data comes from OP.GG and may be outdated if the profile has not been refreshed there for a while.",
+    "tooMany": "Found {count} players; only the first 5 were used.",
+    "tagAssumed": "No #TAG: assumed #BR1 for {names}.",
+    "invalid": "Not recognized: {items}",
+    "empty": "No Riot ID found in the text.",
+    "storageUnavailable": "Could not save the team in this browser.",
+    "requestFailed": "Could not fetch the players right now. Try again.",
+    "roleLabel": "Role",
+    "noRole": "—",
+    "unranked": "Unranked",
+    "flexQueue": "flex",
+    "lp": "{lp} LP",
+    "record": "{wins}W {losses}L · {rate}%",
+    "mainRole": "Main role: {roles}",
+    "noMainRole": "Main role not detected",
+    "recentForm": "Last {games}: {wins}W {losses}L · KDA {kda}",
+    "noRecent": "No recent Summoner's Rift games.",
+    "topChampions": "Top champions",
+    "games": "{count, plural, one {# game} other {# games}}",
+    "winRate": "{rate}%",
+    "kda": "KDA {kda}",
+    "comfort": "Comfort",
+    "comfortHelp": "Combines games played, win rate adjusted for small samples and how recently the champion was played.",
+    "sourceUpdated": "Profile updated on OP.GG {ago}",
+    "noChampions": "No ranked champions this season.",
+    "summaryTitle": "Team summary",
+    "poolByRole": "Comfortable pool by role",
+    "nobody": "Nobody in this role",
+    "noComfortPicks": "No comfortable champions",
+    "alerts": {
+      "missing_role": "Nobody playing {role}.",
+      "duplicate_role": "More than one player in {role}.",
+      "shallow_pool": "Shallow pool in {role}: {count, plural, =0 {no comfortable champions} one {# comfortable champion} other {# comfortable champions}}.",
+      "one_trick": "One-trick in {role}: {champion} in {share}% of games."
+    },
+    "errors": {
+      "not_found": "Player not found on OP.GG. Check the name and tag.",
+      "timeout": "OP.GG took too long to answer. Try refreshing.",
+      "network": "Could not fetch this player right now.",
+      "bad_response": "Could not read this player's data right now.",
+      "unavailable": "Could not fetch this player right now."
+    }
   },
   "Simulator": {
     "title": "Draft simulator"
   },
   "Analyze": {
     "title": "Analyze draft"
+  },
+  "Roles": {
+    "top": "Top",
+    "jungle": "Jungle",
+    "mid": "Mid",
+    "adc": "ADC",
+    "support": "Support"
+  },
+  "Tiers": {
+    "IRON": "Iron",
+    "BRONZE": "Bronze",
+    "SILVER": "Silver",
+    "GOLD": "Gold",
+    "PLATINUM": "Platinum",
+    "EMERALD": "Emerald",
+    "DIAMOND": "Diamond",
+    "MASTER": "Master",
+    "GRANDMASTER": "Grandmaster",
+    "CHALLENGER": "Challenger"
+  },
+  "Common": {
+    "loading": "Loading…"
   }
 }

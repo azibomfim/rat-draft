@@ -7,7 +7,11 @@
  */
 import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/streamableHttp.js";
-import { DEFAULT_TIMEOUT_MS, DataSourceError, withTimeout } from "./errors";
+import { ErrorCode, McpError } from "@modelcontextprotocol/sdk/types.js";
+import type { ChampionIndex } from "./champion-id";
+import { DEFAULT_TIMEOUT_MS, DataSourceError, withTimeout, type DataErrorCode } from "./errors";
+import { MATCH_FIELDS, MATCH_LIMIT, PROFILE_FIELDS, profileFromOpgg } from "./opgg-player";
+import type { PlayerProfile, Region, RiotId } from "./types";
 
 export const DEFAULT_OPGG_MCP_URL = "https://mcp-api.op.gg/mcp";
 
@@ -50,16 +54,22 @@ async function resetClient(): Promise<void> {
 function toDataError(err: unknown, what: string): DataSourceError {
   if (err instanceof DataSourceError) return err;
   const message = err instanceof Error ? err.message : String(err);
-  const code = /timed? ?out/i.test(message) ? "timeout" : "network";
+  let code: DataErrorCode = "network";
+  if (err instanceof McpError && err.code === ErrorCode.RequestTimeout) code = "timeout";
+  else if (/not\s*found/i.test(message)) code = "not_found";
+  else if (/timed? ?out/i.test(message)) code = "timeout";
+  else if (err instanceof McpError && err.code !== ErrorCode.ConnectionClosed) code = "bad_response";
   return new DataSourceError("opgg", code, `OP.GG ${what} failed: ${message}`, { cause: err });
 }
 
-/** Runs an operation on the shared client; on failure reconnects once and retries. */
+/** Runs an operation on the shared client; on a transport failure reconnects once and retries. */
 async function withClient<T>(what: string, op: (client: Client) => Promise<T>): Promise<T> {
   try {
     return await op(await getClient());
   } catch (first) {
-    if (first instanceof DataSourceError && first.code !== "network") throw first;
+    // Protocol answers (e.g. "Summoner not found", timeouts) are not connection problems.
+    const mapped = toDataError(first, what);
+    if (mapped.code !== "network") throw mapped;
     await resetClient();
     try {
       return await op(await getClient());
@@ -112,6 +122,31 @@ export async function callOpggTool(name: string, args: Record<string, unknown>):
     throw new DataSourceError("opgg", code, `OP.GG ${name} error: ${text.slice(0, 300)}`);
   }
   return text;
+}
+
+/**
+ * Profile + recent matches → PlayerProfile. The match history is optional:
+ * if it fails, the profile is still returned (without recent form/roles).
+ */
+export async function fetchOpggPlayerProfile(
+  riotId: RiotId,
+  region: Region,
+  index: ChampionIndex,
+): Promise<PlayerProfile> {
+  const base = { game_name: riotId.gameName, tag_line: riotId.tagLine, region: region.toUpperCase(), lang: "en_US" };
+  const [profileText, matchesText] = await Promise.all([
+    callOpggTool("lol_get_summoner_profile", { ...base, desired_output_fields: PROFILE_FIELDS }),
+    callOpggTool("lol_list_summoner_matches", {
+      ...base,
+      limit: MATCH_LIMIT,
+      desired_output_fields: MATCH_FIELDS,
+    }).catch(() => null),
+  ]);
+  try {
+    return profileFromOpgg(profileText, { riotId, region, index, matchesText });
+  } catch (err) {
+    throw new DataSourceError("opgg", "bad_response", `Could not read OP.GG profile: ${String(err)}`, { cause: err });
+  }
 }
 
 /** Closes the shared connection (used by scripts). */
