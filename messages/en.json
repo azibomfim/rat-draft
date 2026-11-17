@@ -100,5 +100,67 @@
   },
   "Common": {
     "loading": "Loading…"
+  },
+  "Errors": {
+    "not_found": "Not found.",
+    "timeout": "OP.GG took too long to answer. Try again.",
+    "network": "Could not fetch the data right now.",
+    "bad_response": "Could not read the data right now.",
+    "unavailable": "Service unavailable right now.",
+    "invalid_request": "Invalid request.",
+    "retry": "Try again"
+  },
+  "Champion": {
+    "winRate": "Win rate",
+    "pickRate": "Pick rate",
+    "banRate": "Ban rate",
+    "tier": "Tier {tier}",
+    "tierHelp": "OP.GG tier in this role: 1 = strongest, 5 = weakest.",
+    "roleRate": "{rate}% of their games are in this role",
+    "offRole": "Rarely played in this role: numbers are the champion's overall stats.",
+    "counters": "Counters",
+    "countersHelp": "Do well against it in lane (the counter's win rate).",
+    "goodAgainst": "Good against",
+    "goodAgainstHelp": "It does well against these (its win rate).",
+    "synergies": "Synergies",
+    "synergiesHelp": "Allies with the best duo win rate.",
+    "none": "Not enough data.",
+    "games": "{count, plural, one {# game} other {# games}}"
+  },
+  "Matchup": {
+    "title": "{a} vs {b}",
+    "estimate": "Estimated edge",
+    "estimateValue": "{champion} wins {rate} of games",
+    "sample": "{count, plural, one {# game} other {# games}} this patch",
+    "noSample": "Not enough games for this matchup.",
+    "laneAdvantage": "Lane advantage",
+    "soloKill": "Solo kills",
+    "even": "Even",
+    "favors": "{champion}",
+    "style": "Recommended style",
+    "styles": {
+      "aggressive": "Aggressive",
+      "even": "Even",
+      "passive": "Passive"
+    },
+    "powerCurve": "Strength by game length",
+    "powerCurveHelp": "Each champion's win rate by game length (overall in this role, not only in this matchup).",
+    "bucketFirst": "<{to} min",
+    "bucketRange": "{from}–{to} min",
+    "bucketLast": "{from}+ min",
+    "duration": "Length",
+    "showTable": "Show as table",
+    "spikeEarly": "{champion} is stronger early",
+    "spikeLate": "{champion} scales into late game",
+    "tipsFor": "Tips for {champion}",
+    "noTips": "No tips for this matchup.",
+    "tipsEnglish": "Tips from OP.GG, available in English only."
+  },
+  "Dev": {
+    "title": "Component preview",
+    "note": "Development-only page to review the Phase 2 components.",
+    "champion": "Champion",
+    "role": "Role",
+    "opponent": "Opponent"
   }
 }

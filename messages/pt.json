@@ -100,5 +100,67 @@
   },
   "Common": {
     "loading": "Carregando…"
+  },
+  "Errors": {
+    "not_found": "Não encontrado.",
+    "timeout": "O OP.GG demorou demais para responder. Tente de novo.",
+    "network": "Não foi possível buscar os dados agora.",
+    "bad_response": "Não foi possível ler os dados agora.",
+    "unavailable": "Serviço indisponível no momento.",
+    "invalid_request": "Pedido inválido.",
+    "retry": "Tentar de novo"
+  },
+  "Champion": {
+    "winRate": "Win rate",
+    "pickRate": "Pick rate",
+    "banRate": "Ban rate",
+    "tier": "Tier {tier}",
+    "tierHelp": "Tier do OP.GG na rota: 1 = mais forte, 5 = mais fraco.",
+    "roleRate": "{rate}% das partidas dele são nesta rota",
+    "offRole": "Pouco jogado nesta rota: os números são gerais do campeão.",
+    "counters": "Counters",
+    "countersHelp": "Vão bem contra ele na rota (win rate do counter).",
+    "goodAgainst": "Bom contra",
+    "goodAgainstHelp": "Ele vai bem contra estes (win rate dele).",
+    "synergies": "Sinergias",
+    "synergiesHelp": "Aliados com melhor win rate em dupla.",
+    "none": "Sem amostra suficiente.",
+    "games": "{count, plural, one {# jogo} other {# jogos}}"
+  },
+  "Matchup": {
+    "title": "{a} vs {b}",
+    "estimate": "Vantagem estimada",
+    "estimateValue": "{champion} vence {rate} das partidas",
+    "sample": "{count, plural, one {# partida} other {# partidas}} no patch",
+    "noSample": "Sem amostra suficiente para este confronto.",
+    "laneAdvantage": "Vantagem na rota",
+    "soloKill": "Abates solo",
+    "even": "Equilibrado",
+    "favors": "{champion}",
+    "style": "Estilo recomendado",
+    "styles": {
+      "aggressive": "Agressivo",
+      "even": "Equilibrado",
+      "passive": "Passivo"
+    },
+    "powerCurve": "Força por duração da partida",
+    "powerCurveHelp": "Win rate de cada campeão por duração da partida (geral do campeão na rota, não só neste confronto).",
+    "bucketFirst": "<{to} min",
+    "bucketRange": "{from}–{to} min",
+    "bucketLast": "{from}+ min",
+    "duration": "Duração",
+    "showTable": "Ver como tabela",
+    "spikeEarly": "{champion} é mais forte no início",
+    "spikeLate": "{champion} cresce no fim de jogo",
+    "tipsFor": "Dicas para {champion}",
+    "noTips": "Sem dicas para este confronto.",
+    "tipsEnglish": "Dicas do OP.GG, disponíveis só em inglês."
+  },
+  "Dev": {
+    "title": "Pré-visualização de componentes",
+    "note": "Página só de desenvolvimento para revisar os componentes da Fase 2.",
+    "champion": "Campeão",
+    "role": "Rota",
+    "opponent": "Adversário"
   }
 }

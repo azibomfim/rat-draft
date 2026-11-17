@@ -48,13 +48,26 @@ export interface ChampionIndexEntry {
 export class ChampionIndex {
   private byNormalized = new Map<string, string>();
   private byKey = new Map<string, string>();
+  private names = new Map<string, string>();
 
   constructor(champions: ChampionIndexEntry[]) {
     for (const c of champions) {
       this.byNormalized.set(normalizeChampionKey(c.id), c.id);
-      if (c.name) this.byNormalized.set(normalizeChampionKey(c.name), c.id);
+      if (c.name) {
+        this.byNormalized.set(normalizeChampionKey(c.name), c.id);
+        this.names.set(c.id, c.name);
+      }
       if (c.key) this.byKey.set(String(c.key), c.id);
     }
+  }
+
+  /** Display name the index was built with (English for the server index). */
+  nameOf(id: string): string | undefined {
+    return this.names.get(id);
+  }
+
+  ids(): string[] {
+    return [...new Set(this.byNormalized.values())];
   }
 
   resolve(nameOrKey: string | number | undefined | null): string | undefined {

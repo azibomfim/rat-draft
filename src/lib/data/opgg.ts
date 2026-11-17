@@ -10,8 +10,9 @@ import { StreamableHTTPClientTransport } from "@modelcontextprotocol/sdk/client/
 import { ErrorCode, McpError } from "@modelcontextprotocol/sdk/types.js";
 import type { ChampionIndex } from "./champion-id";
 import { DEFAULT_TIMEOUT_MS, DataSourceError, withTimeout, type DataErrorCode } from "./errors";
+import { analysisFields, toOpggChampionName } from "./opgg-champion";
 import { MATCH_FIELDS, MATCH_LIMIT, PROFILE_FIELDS, profileFromOpgg } from "./opgg-player";
-import type { PlayerProfile, Region, RiotId } from "./types";
+import type { PlayerProfile, Region, RiotId, Role } from "./types";
 
 export const DEFAULT_OPGG_MCP_URL = "https://mcp-api.op.gg/mcp";
 
@@ -147,6 +148,25 @@ export async function fetchOpggPlayerProfile(
   } catch (err) {
     throw new DataSourceError("opgg", "bad_response", `Could not read OP.GG profile: ${String(err)}`, { cause: err });
   }
+}
+
+/** Raw lol_get_champion_analysis text for a champion (English name) in a role. */
+export function fetchOpggChampionAnalysis(englishName: string, role: Role): Promise<string> {
+  return callOpggTool("lol_get_champion_analysis", {
+    game_mode: "ranked",
+    champion: toOpggChampionName(englishName),
+    position: role,
+    desired_output_fields: analysisFields(role),
+  });
+}
+
+/** Raw lol_get_lane_matchup_guide text (JSON) for "my" champion vs an opponent. */
+export function fetchOpggMatchupGuide(role: Role, myEnglishName: string, opponentEnglishName: string): Promise<string> {
+  return callOpggTool("lol_get_lane_matchup_guide", {
+    position: role,
+    my_champion: toOpggChampionName(myEnglishName),
+    opponent_champion: toOpggChampionName(opponentEnglishName),
+  });
 }
 
 /** Closes the shared connection (used by scripts). */

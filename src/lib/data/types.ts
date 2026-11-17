@@ -57,19 +57,61 @@ export interface ChampionMeta {
   winRate: number;
   pickRate: number;
   banRate: number;
+  /** Share of this champion's games played in `role` (0–1). */
+  roleRate?: number;
+  /** Meta tier, "1" (strongest) to "5". */
   tier?: string;
-  /** Champions that do well AGAINST this one. */
-  counters: { championId: string; winRate: number }[];
-  goodAgainst: { championId: string; winRate: number }[];
-  synergies: { championId: string; winRate: number }[];
+  /** True when the champion is (almost) never played in `role`; rates are then overall. */
+  offRole?: boolean;
+  /**
+   * Champions that do well AGAINST this one in the lane.
+   * winRate = the counter's win rate in that matchup.
+   */
+  counters: MatchupStat[];
+  /** Champions this one beats. winRate = this champion's win rate. */
+  goodAgainst: MatchupStat[];
+  /** Allies that pair well. winRate = win rate of the duo. */
+  synergies: { championId: string; winRate: number; role?: Role; games?: number }[];
+  fetchedAt: string;
 }
+
+export interface MatchupStat {
+  championId: string;
+  winRate: number;
+  games?: number;
+}
+
+/** Win rate by game length, e.g. { fromMinute: 25, winRate: 0.52 } = 25–30 min. */
+export interface PowerPoint {
+  fromMinute: number;
+  winRate: number;
+}
+
+export type LaneSide = "a" | "b" | "even";
+export type PlayStyle = "aggressive" | "even" | "passive";
 
 export interface LaneMatchup {
   role: Role;
   championA: string;
   championB: string;
+  /** A's win rate against B in this lane. */
   winRateA?: number;
+  /** Sample size behind winRateA. */
+  games?: number;
+  laneAdvantage?: LaneSide;
+  soloKillAdvantage?: LaneSide;
+  /** Recommended lane style for A, and for B. */
+  playStyleA?: PlayStyle;
+  playStyleB?: PlayStyle;
+  /** Tips for playing A against B. */
   tips: string[];
+  /** Tips for playing B against A. */
+  tipsB: string[];
+  /** Language of the tips (the source only provides English). */
+  tipsLang?: string;
+  /** Each champion's win rate by game length (power curve). */
+  powerCurve: { a: PowerPoint[]; b: PowerPoint[] };
+  fetchedAt: string;
 }
 
 /** Serializable error the UI can translate ("Não foi possível buscar X agora"). */

@@ -1,0 +1,13 @@
+class LolGetChampionAnalysis: data
+class Data: summary,strong_counters,weak_counters,synergies
+class Summary: average_stats,positions
+class AverageStats: win_rate,pick_rate,ban_rate,tier
+class Position: name,stats
+class Stats: win_rate,pick_rate,role_rate,ban_rate,tier_data
+class TierData: tier
+class StrongCounter: champion_id,champion_name,play,win_rate
+class Synergies: top,jungle,adc,support
+class Top: synergy_champion_id,synergy_champion_name,play,win_rate
+
+LolGetChampionAnalysis(Data(Summary(AverageStats(0.51,0.12,0.04,1),[Position("MID",Stats(0.51,0.11,0.96,0.04,TierData(1)))]),[StrongCounter(3,"Galio",5020,0.56),StrongCounter(80,"Pantheon",669,0.56),StrongCounter(61,"Orianna",7223,0.55)],[StrongCounter(55,"Katarina",7187,0.52),StrongCounter(8,"Vladimir",5108,0.51),StrongCounter(45,"Veigar",4319,0.51)],Synergies([Top(54,"Malphite",1542,0.54),Top(41,"Gangplank",1501,0.53),Top(39,"Irelia",1527,0.52)],[Top(62,"Wukong",1720,0.54),Top(59,"Jarvan IV",1975,0.52),Top(234,"Viego",1643,0.52)],[Top(498,"Xayah",2940,0.54),Top(21,"Miss Fortune",1667,0.54),Top(202,"Jhin",6222,0.52)],[Top(53,"Blitzcrank",2325,0.55),Top(497,"Rakan",1585,0.55),Top(89,"Leona",2230,0.52)])))
+OP.GG page: https://op.gg/lol/champions/ahri/build/mid?utm_source=opgg_mcp&utm_medium=mcp&utm_campaign=5f760f506101
