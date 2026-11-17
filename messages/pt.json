@@ -1,0 +1,32 @@
+{
+  "Metadata": {
+    "title": "Analista de Draft",
+    "description": "Análise de contas, simulador de draft de torneio e análise de drafts de League of Legends."
+  },
+  "Nav": {
+    "home": "Início",
+    "team": "Time",
+    "simulator": "Simulador",
+    "analyze": "Analisar",
+    "language": "Idioma"
+  },
+  "Footer": {
+    "disclaimer": "Não afiliado à Riot Games nem ao OP.GG."
+  },
+  "Home": {
+    "title": "Analista de Draft",
+    "subtitle": "Analise as contas do seu time, simule drafts de torneio contra um coach com IA e revise drafts de partidas."
+  },
+  "Placeholder": {
+    "comingSoon": "Em construção."
+  },
+  "Team": {
+    "title": "Time"
+  },
+  "Simulator": {
+    "title": "Simulador de draft"
+  },
+  "Analyze": {
+    "title": "Analisar draft"
+  }
+}
